@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: rubik;
+    padding: 20px;
+    background: #222831;
+    color: #00ADB5;
+    text-align: center;
+    line-height: 50px;
+}
+
+    .deze {
+        background:  #222831;
+        color: #00ADB5;
+        font-size: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* height: 100px; */
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 20px;
+        cursor: pointer;
+    }
+   
+    .r {
+        display: inline-block;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+    .deze:hover .r {
+        opacity: 1;
+    }
+    .deze:hover .r:nth-child(2) {
+        transition-delay: 0.15s;
+    }
+    .deze:hover .r:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+    .deze:hover .r:nth-child(4) {
+        transition-delay: 0.45s;
+    }
+    .deze:hover .r:nth-child(5) {
+        transition-delay: 0.6s;
+    }
+    .deze:hover .r:nth-child(6) {
+        transition-delay: 0.75s;
+    }
+    .deze1 {
+      margin-top: -100px;
+      font-size: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      opacity: 0.7;   
+      
+  }
+  .r1 {
+    color: black;
+    display: inline-block;
+        opacity: 1;
+    
+  }
+    .bendras {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        margin: 20px auto;
+        
+      }
+      
+      .bolidas {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .stiklas {
+        margin-bottom: -100px;
+        margin-left: 15px;
+        background-color: transparent;
+        border: 2px solid #00ADB5;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        transform: rotateY(0deg) rotate(45deg);
+      }
+      .lekste {
+        margin-left: 10px;
+        align-items: center;
+        border: 2px solid #00ADB5;
+        width: 300px;
+        height: 60px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .sviesa1 {
+        border: 2px solid #00ADB5;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        animation: blink 3s linear 0s infinite;
+      }
+      
+      .sviesa2 {
+        border: 2px solid #00ADB5;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        animation: blink 3s linear 0s infinite;
+        animation-delay: 1s;
+        
+      }
+      
+      .sviesa3 {
+        border: 2px solid #00ADB5;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        animation: blink 3s linear 0s infinite;
+        animation-delay: 2s;
+        
+      }
+      .sviesa {
+        margin-top: 40px;
+        margin-left: 10px;
+        border: 2px solid #00ADB5;
+        background: #00ADB5;
+        border-color: transparent;
+        border-top-right-radius: 90px;
+        border-bottom-left-radius: 90px;
+        border-bottom-right-radius: 420px;
+        width: 200px;
+        height: 200px;
+        transform: rotateY(0deg) rotate(45deg);
+        animation: blink1 2s;
+        animation-fill-mode: forwards; 
+      }
+      
+      @keyframes blink {
+        0% {
+            background-color: #222831;
+        }
+        50% {
+            background-color: #00ADB5;
+        }
+        100% {
+            background-color: #222831;
+        }
+      }
+      @keyframes blink1 {
+        0% {
+            background-color: #222831;
+        }
+        50% {
+            background-color: #222831;
+        }
+        100% {
+            background-color: #00ADB5;
+        }
+      }
+
+/* Keyframes */
+
+    /* animation-name: bouncing;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction: alternate;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards; */
+
+/* 
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation */
